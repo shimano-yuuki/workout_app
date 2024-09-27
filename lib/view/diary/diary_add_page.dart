@@ -34,19 +34,19 @@ class DiaryAddPage extends ConsumerWidget {
           ],
         ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 40),
+        padding: const EdgeInsets.symmetric(horizontal: 40),
         child: Column(
             crossAxisAlignment:CrossAxisAlignment.start,
             children: [
-              SizedBox(height: 40),
+              const SizedBox(height: 40),
               Text(formattedDate,style: MyTextStyles.title.large.bold),
-              SizedBox(height: 10),
-              Container(
+              const SizedBox(height: 10),
+              SizedBox(
                 width: double.infinity,
                 child: TextField(
                   keyboardType: TextInputType.multiline,
                   maxLines: 15,
-                  decoration: InputDecoration(
+                  decoration: const InputDecoration(
                     border: InputBorder.none,
                     hintText: '今日の筋トレはどうでしたか？',
                   ),
